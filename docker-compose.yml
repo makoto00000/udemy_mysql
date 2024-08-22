@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: mysql:8.2
+    platform: linux/amd64
+    container_name: mysql-container
+    ports:
+      - "3307:3307"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test
+      TZ: "Asia/Tokyo"
+    volumes:
+      - ./my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./sql:/home/sql

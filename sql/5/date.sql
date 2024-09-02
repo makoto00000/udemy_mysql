@@ -7,7 +7,9 @@ SELECT CONCAT(name, "(", age, ")") AS "名前(年齢)" FROM users LIMIT 3;
 
 -- NOW, CURDATE, DATE_FORMAT
 
-SELECT NOW();
+SELECT NOW(); -- DATETIME
 SELECT NOW(), name, age FROM users LIMIT 3;
+
+SELECT CURDATE(); -- DATE
 
 SELECT DATE_FORMAT(NOW(), "%Y-%m-%d %H:%i:%s")

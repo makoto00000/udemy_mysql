@@ -7,8 +7,11 @@ services:
       - "3307:3307"
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: test
       TZ: "Asia/Tokyo"
     volumes:
       - ./my.cnf:/etc/mysql/conf.d/my.cnf
       - ./sql:/home/sql
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:

@@ -1,0 +1,16 @@
+# SQLの実行順序
+
+1. FROM, JOIN
+2. WHERE
+3. GROUP BY
+4. 集計関数（SUMなど）
+5. HAVING
+6. ウィンドウ関数
+7. SELECT
+8. DISTINCT
+9. UNION/INTERSECT/EXCEPT
+10. ORDER BY
+11. OFFSET
+12. LIMIT
+
+ただし、WITHや副問合せなどの場合はその中で以下の順に従う。

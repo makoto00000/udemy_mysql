@@ -26,3 +26,7 @@ password> password
 ```mysql
 source /home/sql/test.sql
 ```
+
+## 参考
+
+- [ソースコード](https://github.com/NM-Udemy/SQL_22days)
